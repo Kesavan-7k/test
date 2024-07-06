@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(./logistic-770x433.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 89vh;
+}
+.vid{
+    width: 100px;
+    height: 60px;
+}
+
+.four{
+    font-size: 20px;
+    color:rgba(185, 5, 5, 0.911);
+    font-weight: bolder;
+}
+.five{
+    font-size: 30px;
+    color: rgb(14, 77, 71);
+    animation-name: delivery;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    position: relative;
+    top: -90px;
+    animation-fill-mode: forwards;
+}
+@keyframes delivery{
+    from{
+        top:-90px;
+    }
+    to{
+        top:0px
+    }
+}
+i{
+    font-size: 17px;
+}
+.fast{
+    width: 100px;
+    height: 70px;
+    padding-right: 30px;
+}
+.logo{
+    background-color: whitesmoke;
+    border-radius: 7px 100px 7px 100px;
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 10px;
+    padding: 0px 15px 0px 10px;
+    display: flex;
+    animation-name: logo;
+    animation-duration: 2s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    left: -500px;
+}
+@keyframes logo{
+    from{
+        left: -500px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+nav{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(5, 7, 90, 0.3) ;
+}
+.navbar{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aliceblue;
+        font-size: large;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+}
+/* marquee{
+    position: fixed;
+    z-index: 99;
+} */
+.para0{
+    font-size: 55px;
+    color: rgb(20, 20, 122);
+    font-weight: bolder;
+    position: relative;
+    bottom: -1500px;
+    animation-name: head;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes head{
+    from{
+        bottom: -1500px;
+    }
+    to{
+        bottom:0px;
+    }
+
+}
+.para10{
+    font-size: 55px;
+    color: rgb(20, 20, 122);
+    font-weight: bolder;
+}
+.para1{
+    font-size: 25px;
+    padding-top: 18px;
+    color:rgb(52, 122, 20) ;
+    font-weight: bolder;
+} 
+.para2::before{
+    color: orange;
+    text-shadow: 2px 1px black;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    animation-iteration-count: infinite;
+    animation-duration: 4s ;
+    animation-name: move;
+    content: " ";
+}
+@keyframes move{
+    0%{
+        content :"expanding business";
+    }
+    25%{
+        content :"faster deliveries";
+    }
+    50%{
+        contant :"reaching to 2,700+ towns and cities";
+    }
+    75%{
+        content :"cash (CoD) handling";
+    }
+    100%{
+        content :"reliable shipping experience";
+    }
+}
+.content{
+    background-color: rgb(240, 248, 255,0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 30px;
+    padding-left: 200px;
+    margin-top: 20px;
+    overflow: hidden;
+
+
+}
+.top{
+
+    font-size: 30px;
+}
+.but{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+.btn{
+    padding: 6px 50px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #242d69;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.btn::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,#ff7300,#fffb00,#48ff00,
+        #00ffd5,#002bff,#ff00c8,#ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes
+
+.set{
+    border: 2px solid black;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 180px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.container2{
+    background: #3f52c6 url(./truck-faded.62290e6a.jpeg) no-repeat 100%;
+    height: 90vh;
+}
+
+

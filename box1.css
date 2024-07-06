@@ -1,0 +1,54 @@
+/* .lak{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+} */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.lak{
+    width: 300px;
+    height: 400px;
+    background: black;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+}
+.lak span{
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lak::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 700px;
+    left: 76px;
+    top: -100px;
+    background: linear-gradient(#00e5ff,#b400fb);
+    animation:animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.lak::after{
+    content: '';
+    position: absolute;
+    background-color:black;
+    inset: 5px;
+    border-radius: 20px;
+}
